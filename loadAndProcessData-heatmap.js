@@ -1,7 +1,7 @@
 export const loadAndProcessData = () => 
     Promise.all([
-        d3.csv('../Data/Rat sightings.csv'),
-        d3.text('../Data/rat.svg')
+        d3.csv('./Data/Rat sightings.csv'),
+        d3.text('./Data/rat.svg')
     ])
     .then(([data, ratSvg]) => {
         data.forEach(d => {

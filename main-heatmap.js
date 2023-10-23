@@ -1,9 +1,7 @@
 import { loadAndProcessData } from './loadAndProcessData-heatmap.js'
 import { circularMap } from './circularMap-heatmap.js'
 import { checkboxOptions } from './checkboxOptions-heatmap.js'
-import { linkedHighlighting } from '../main.js'
-import { month } from '../main.js'
-import { year } from '../main.js'
+import { linkedHighlighting, month, year } from './main.js'
 
 const svg = d3.select('#svgChronological');
 const width  = +svg.attr('width');
