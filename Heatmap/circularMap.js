@@ -1,4 +1,4 @@
-import { months } from './dates.js';
+import { months } from '../dates.js';
 
 export const circularMap = (parent, props) => {
     const {
@@ -37,7 +37,7 @@ export const circularMap = (parent, props) => {
         .data([null])
         .enter()
         .append('text')
-            .text('Chronological rat sightings in New York City')
+            .text('Heatmap of rat sightings in New York City')
             .attr('text-anchor', 'middle')
             .attr('x', 0)
             .attr('y', -263)
