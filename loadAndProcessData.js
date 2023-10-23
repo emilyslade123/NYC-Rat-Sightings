@@ -3,8 +3,8 @@ import { capitaliseEachWord } from './regex.js'
 
 export const loadAndProcessData = () => 
     Promise.all([
-        d3.json('./Data/new-york-city-boroughs.geojson'), 
-        d3.csv('./Data/Rat sightings.csv')
+        d3.json('./Maps/new-york-city-boroughs.geojson'), 
+        d3.csv('./Maps/Rat sightings.csv')
     ])
     .then(([geoData, csvData]) => {
         csvData.forEach((d, i) => {
