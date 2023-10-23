@@ -72,7 +72,7 @@ export const boroughMap = (parent, props) => {
             .attr('x', innerWidth / 2)
             .attr('y', -23)
             .attr('class', 'title')
-            .text('Geographical rat sightings in ' + (zoomingIntoBorough || 'New York City'))
+            .text('Locations of rat sightings in ' + (zoomingIntoBorough || 'New York City'))
             
     titleContainerG.exit().remove();
     
