@@ -1,4 +1,4 @@
-import { months } from '../dates.js'
+import { months } from './dates.js'
 
 export const circularMap = (parent, props) => {
     const {
