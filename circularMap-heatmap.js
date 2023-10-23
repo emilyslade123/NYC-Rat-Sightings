@@ -235,25 +235,25 @@ export const circularMap = (parent, props) => {
     
     // ------- Add decorative rat icon in the centre of the graph --------
     
-    const ratG = g
-        .selectAll('g.rat')
-        .data([null])
+    // const ratG = g
+    //     .selectAll('g.rat')
+    //     .data([null])
         
-    const rat = ratG
-        .enter()
-        .append('g')
-        .merge(ratG)
-            .attr('class', 'rat')
-            .attr('transform', 'translate(0, -15)')
+    // const rat = ratG
+    //     .enter()
+    //     .append('g')
+    //     .merge(ratG)
+    //         .attr('class', 'rat')
+    //         .attr('transform', 'translate(0, -15)')
     
-    rat
-        .selectAll('path.ratIcon')
-        .data([null])
-        .enter()
-        .append('path')
-            .attr('transform', 'translate(-26, 26) scale(0.0042, -0.0042)')
-            .attr('class', 'ratIcon')
-            .attr('d', ratSvg)
+    // rat
+    //     .selectAll('path.ratIcon')
+    //     .data([null])
+    //     .enter()
+    //     .append('path')
+    //         .attr('transform', 'translate(-26, 26) scale(0.0042, -0.0042)')
+    //         .attr('class', 'ratIcon')
+    //         .attr('d', ratSvg)
         
     // ------- Add legend -------
     
